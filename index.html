@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The World Is Our Canvas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+      //Your web app's Firebase configuration
+      var firebaseConfig = {
+    apiKey: "AIzaSyBEc9jobToQXkKPy1SVqhmINmANymWV36s",
+    authDomain: "the-world-is-our-canvas-99e34.firebaseapp.com",
+    databaseURL: "https://the-world-is-our-canvas-99e34.firebaseio.com",
+    projectId: "the-world-is-our-canvas-99e34",
+    storageBucket: "the-world-is-our-canvas-99e34.appspot.com",
+    messagingSenderId: "370491087524",
+    appId: "1:370491087524:web:6e7f6559ad8f5ee3ece431"
+  };
+     // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firebase
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <div id = "canvascontainer"></div>
+    <p>
+      <button id = "saveButton">save</button>
+      </p>
+      <p>
+        <button id="clearButton"> clear </button>
+      </p>
+  </body>
+</html>
